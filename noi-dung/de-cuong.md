@@ -1,6 +1,6 @@
-# Đề cương: "Bé chơi Arduino cùng TurboWarp" (bản nháp 4, để duyệt)
+# Đề cương: "Bé chơi Arduino cùng TurboWarp" (bản nháp 5, để duyệt)
 
-Dành cho: bé 6 tuổi học cùng bố mẹ · Mỗi bài 10–15 phút · Lập trình bằng khối TurboWarp, mạch Arduino Uno.
+Dành cho: bé 6 tuổi học cùng bố mẹ · Mỗi bài 10–15 phút · Lập trình bằng khối TurboWarp, mạch Arduino Uno · Chạy trên web **Ong Nhỏ Code**.
 
 Bộ tài liệu gồm 2 cuốn:
 - **Sách học**: trên web, mỗi bài có phần cho bé và phần cho bố mẹ.
@@ -94,78 +94,72 @@ Nguồn tải:
 - Gợi ý câu hỏi để trò chuyện với bé.
 - Ghi nguồn của bài.
 
-## 5. Bài tập trên web "Bé chơi Arduino"
+## 5. Bài tập trên web (dùng hệ thống của Ong Nhỏ Code)
 
-Bài tập làm **ngay trên web**, không in ra giấy. Bé làm bài trên máy tính hoặc máy tính bảng; giáo viên (hoặc bố mẹ) xem lại bài làm và chấm trên cùng trang web, theo cách web TurboWarp của bạn đang làm.
+Bé làm bài tập ngay trên web. Giáo viên xem lại và chấm ở trang **Lớp học → Bài nộp**, giống hệt cách web Ong Nhỏ Code đang làm. Khoá Arduino **dùng lại** đăng nhập, lớp học, máy chấm và trang chấm bài sẵn có, chỉ thêm những phần còn thiếu.
 
-### 5.1 Ai làm gì
+### 5.1 Những gì web Ong Nhỏ Code đã có (dùng lại nguyên)
 
-| Vai trò | Làm gì trên web |
+| Có sẵn | Dùng cho khoá Arduino thế nào |
 |---|---|
-| 👧 **Bé** | Vào lớp bằng **ảnh đại diện + mã lớp**, không cần gõ mật khẩu. Làm bài, bấm "Nộp bài", xem sao và lời khen của cô |
-| 👩‍🏫 **Giáo viên** | Tạo lớp, thêm bé, xem bài nộp, chấm sao và nhận xét, xem tiến độ cả lớp |
-| 👨‍👩‍👧 **Bố mẹ** (tuỳ chọn) | Xem bài làm và nhận xét của cô dành cho con mình |
+| Đăng nhập bằng **mã lớp + mật mã 4 hình**, in thẻ đăng nhập | Bé 6 tuổi đăng nhập như hiện nay |
+| 3 vai trò: quản trị, giáo viên, học sinh | Giữ nguyên |
+| TurboWarp nhúng trong trang bài học; tự lưu sau mỗi 45 giây | Thêm các khối Arduino vào đúng trình soạn thảo này |
+| Thẻ *Bài học / Bài tập / Trang sách* | *Trang sách* hiện trang gốc của SIK hoặc ARDX cho bố mẹ và giáo viên |
+| Nút 🔊 **Nghe đọc**, hình khối lệnh đúng màu, nút 💡 **Gợi ý** chỉ trực tiếp trên Scratch | Dùng cho mọi bài Arduino |
+| Câu **trắc nghiệm** chấm ngay | Dạng "Đoán xem" (đáp án là hình 🐇 / 🐢) |
+| Bài **thực hành**: kiểm tra bé đã dùng đúng loại khối chưa | Kiểm tra bé đã dùng khối `bật đèn`, `chờ`, `liên tục`... chưa |
+| Giáo viên **mở bài nộp trong Scratch**, cho điểm 0–100 và nhận xét; sao của bài tự tính từ điểm | Giữ nguyên, thêm phần chấm nhanh (mục 5.3) |
+| **Gói nội dung soạn sẵn** (`content/packs/`) và lời giải mẫu | Viết khoá Arduino theo đúng mẫu này |
 
-### 5.2 Các dạng bài tập và cách chấm
+### 5.2 Các dạng bài tập
 
-Mỗi bài học có 3–4 câu bài tập, làm trong khoảng 5 phút. Bé chỉ cần **chạm, kéo thả, tô hoặc vẽ**, không cần gõ chữ. Mỗi câu đều có nút 🔊 đọc đề.
+| Dạng | Bé làm gì | Chấm | Trạng thái |
+|---|---|---|---|
+| 🤔 **Đoán xem** | Chạm vào một hình (🐇 hay 🐢, 💡 hay 🔊) | Tự động | ✅ Có sẵn (trắc nghiệm) |
+| 🚀 **Thực hành trên mạch** | Ghép khối trong TurboWarp, chạy trên Arduino, bấm "Nộp bài" | Tự động kiểm tra khối + giáo viên chấm thêm | ✅ Có sẵn (thực hành) |
+| 🔍 **Sửa lỗi** | Dự án có lỗi đã mở sẵn (ví dụ thiếu khối `tắt đèn`), bé sửa lại | Tự động kiểm tra khối + giáo viên | ✅ Có sẵn (giống bài "Sửa lỗi!" trong gói Lập trình sáng tạo) |
+| 🧩 **Xếp khối** | Kéo các thẻ khối vào đúng thứ tự, ngay trong tab Bài tập | Tự động | 🆕 Cần thêm |
+| 🔗 **Nối hình** | Kéo đường nối "còi" với 🔊, "đèn" với 💡 | Tự động | 🆕 Cần thêm |
+| 🎨 **Tô màu** | Chạm vào đèn để tô màu | Tự động | 🆕 Cần thêm |
+| 🖍️ **Vẽ ý tưởng** | Vẽ bằng ngón tay hoặc chuột | Giáo viên chấm | 🆕 Cần thêm |
+| 📷 **Chụp ảnh mạch** | Bố mẹ chụp ảnh hoặc quay video ngắn mạch đang chạy, đính kèm khi nộp | Giáo viên chấm | 🆕 Cần thêm |
+| 🎤 **Kể cho cô nghe** | Ghi âm tối đa 30 giây | Giáo viên chấm | 🆕 Cần thêm |
 
-| Dạng | Bé làm gì trên web | Cách chấm |
-|---|---|---|
-| 🎨 **Tô màu** | Chạm vào đèn để tô màu (ví dụ tô đèn giao thông đúng thứ tự) | **Tự động** |
-| 🔗 **Nối hình** | Kéo đường nối "còi" với 🔊, "đèn" với 💡 | **Tự động** |
-| 🧩 **Xếp khối** | Kéo các khối lệnh vào đúng thứ tự | **Tự động** |
-| 🤔 **Đoán xem** | Chạm vào một hình, ví dụ 🐇 hay 🐢 | **Tự động** |
-| 🔍 **Tìm chỗ sai** | Chạm vào khối bị sai hoặc bị thiếu | **Tự động** |
-| 🖍️ **Vẽ ý tưởng** | Vẽ bằng ngón tay hoặc chuột lên khung vẽ | **Giáo viên chấm** |
-| 🎤 **Kể cho cô nghe** | Bấm nút ghi âm (tối đa 30 giây) để kể về sản phẩm của mình | **Giáo viên chấm** |
-| 🚀 **Nộp dự án TurboWarp** | Bấm "Nộp bài" ngay trong trình soạn thảo; có thể kèm ảnh hoặc video ngắn chụp mạch đang chạy | **Giáo viên chấm** |
+Khi bé làm sai câu chấm tự động, web nói "Gần đúng rồi, con thử lại nhé!". Điểm được giữ ở lần làm tốt nhất, như web đang làm.
 
-**Chấm tự động:**
-- Bé làm sai: web nói nhẹ nhàng "Gần đúng rồi, con thử lại nhé!" và cho làm lại, không trừ điểm.
-- Web ghi lại số lần bé thử, để giáo viên biết câu nào bé thấy khó.
+### 5.3 Thêm vào trang chấm bài của giáo viên
 
-**Giáo viên chấm:**
-- Cho 1–3 ⭐ và một lời nhận xét. Có sẵn các câu khen mẫu để bấm chọn nhanh, ví dụ "Con vẽ đẹp quá!" hay "Đèn nháy đúng rồi!".
-- Có thể ghi âm lời khen, vì bé chưa đọc được.
-- Có thể bấm "Cho làm lại" kèm gợi ý.
-
-### 5.3 Trang của giáo viên
-
-| Màn hình | Nội dung |
+| Thêm | Lý do |
 |---|---|
-| **Lớp học** | Danh sách các bé; bảng tiến độ mỗi bé × mỗi bài, có màu ✅ đã xong, 🟡 chờ chấm, ⬜ chưa làm |
-| **Hộp bài cần chấm** | Các bài vẽ, ghi âm và dự án đang chờ, xếp theo thời gian nộp. Chấm xong thì tự chuyển sang bài tiếp theo |
-| **Xem bài một bé** | Toàn bộ bài làm của bé: đáp án, số lần thử, hình vẽ, ghi âm, mở dự án TurboWarp để chạy thử |
-| **Thống kê** | Câu nào nhiều bé làm sai, để giáo viên giảng lại |
-| **Xuất báo cáo** | Tải bảng điểm cả lớp (CSV hoặc Excel) |
+| **Hộp bài cần chấm** cho cả lớp, chấm xong tự chuyển sang bài tiếp theo | Hiện phải mở từng học sinh |
+| Xem hình vẽ, ảnh/video mạch, nghe ghi âm ngay trong bảng bài nộp | Các dạng bài mới |
+| Nút chấm nhanh **⭐ / ⭐⭐ / ⭐⭐⭐** (tương ứng 50 / 80 / 100 điểm) bên cạnh ô điểm | Bé 6 tuổi hiểu sao hơn hiểu điểm |
+| Câu khen mẫu bấm chọn nhanh, và **ghi âm lời khen** | Bé chưa đọc được nhận xét |
+| Nút **Cho làm lại** kèm gợi ý | Bé sửa bài theo lời cô |
+| Thống kê câu nhiều bé làm sai | Giáo viên giảng lại |
 
 ### 5.4 Phần thưởng
 
-- Mỗi bài xong được ⭐. Xong mỗi chặng được 1 **huy hiệu**: "Bé làm quen", "Bé ánh sáng", "Bé âm nhạc", "Bé chuyển động", "Bé nóng lạnh", "Kỹ sư IoT nhí".
-- Xong cả khoá học được **giấy khen "Kỹ sư nhí"** để in ra.
-- Không có bảng xếp hạng giữa các bé, để bé không bị so sánh với bạn.
+- Sao của mỗi bài tính tự động như web đang làm. Xong mỗi chặng được 1 **huy hiệu**: "Bé làm quen", "Bé ánh sáng", "Bé âm nhạc", "Bé chuyển động", "Bé nóng lạnh", "Kỹ sư IoT nhí".
+- Xong cả khoá được **giấy khen "Kỹ sư nhí"** để in.
+- Không có bảng xếp hạng giữa các bé.
 
 ### 5.5 Câu hỏi mẫu: Bài 1.2 "Đèn nháy như tim đập"
 
 | Câu | Dạng | Đề (đọc to) | Đáp án / Cách chấm |
 |---|---|---|---|
-| 1 | 🎨 Tô màu | "Con chạm để tô đỏ những đèn đang **sáng** nhé!" (4 đèn có chữ sáng, tắt, sáng, tắt) | Đèn 1 và 3 · tự động |
+| 1 | 🎨 Tô màu | "Con chạm để tô đỏ những đèn đang **sáng** nhé!" (4 đèn: sáng, tắt, sáng, tắt) | Đèn 1 và 3 · tự động |
 | 2 | 🧩 Xếp khối | "Con kéo các khối vào trong vòng lặp để đèn nháy nhé!" | `bật đèn` → `chờ 1 giây` → `tắt đèn` → `chờ 1 giây` · tự động |
 | 3 | 🤔 Đoán xem | "Đổi *chờ 1 giây* thành *chờ 0.2 giây*, đèn nháy giống bạn nào?" | 🐇 Thỏ · tự động |
-| 4 | 🖍️ Vẽ | "Con vẽ một thứ cũng nhấp nháy mà con biết nhé!" | Giáo viên chấm sao và nhận xét |
-| 5 | 🚀 Dự án | "Con nộp chương trình đèn nháy của con cho cô nhé!" (tuỳ chọn: chụp ảnh đèn đang sáng) | Giáo viên mở dự án chạy thử, chấm sao |
+| 4 | 🚀 Thực hành | "Con làm đèn nháy trên mạch rồi nộp cho cô nhé!" (kèm ảnh mạch nếu muốn) | Kiểm tra có khối cờ xanh, `liên tục`, `bật đèn`, `tắt đèn`, `chờ` · giáo viên chấm thêm |
+| 5 | 🖍️ Vẽ | "Con vẽ một thứ cũng nhấp nháy mà con biết nhé!" | Giáo viên chấm sao |
 
 ### 5.6 Bảo vệ dữ liệu của trẻ
 
-- Chỉ lưu **tên gọi ở nhà hoặc biệt danh** và ảnh đại diện hoạt hình, không cần họ tên đầy đủ, ngày sinh hay ảnh thật.
-- Chỉ giáo viên của lớp và bố mẹ của bé xem được bài làm của bé. Không có trang công khai.
-- Ảnh, video và ghi âm của bé tự xoá sau khi kết thúc khoá học (thời gian lưu do bạn quyết định).
-- Bố mẹ có thể yêu cầu xoá toàn bộ dữ liệu của con.
-
-### 5.7 Phần kỹ thuật (phụ thuộc web hiện tại của bạn)
-
-Phần chấm bài cần nơi lưu dữ liệu và tài khoản giáo viên. Mình sẽ **dùng lại hệ thống đang có trong web TurboWarp của bạn** (đăng nhập, lớp học, nộp và chấm bài), chỉ thêm các dạng bài tập mới. Vì vậy mình cần xem mã nguồn web đó trước khi làm.
+- Giữ như web đang làm: bé chỉ có tên gọi, con vật đại diện và mật mã hình.
+- Ảnh, video và ghi âm chỉ giáo viên của lớp xem được. Có tuỳ chọn tự xoá sau khi kết thúc khoá học.
+- Nhắc bố mẹ chỉ chụp mạch, **không chụp mặt bé**.
 
 ## 6. Bài mẫu trong sách học (để bạn duyệt giọng văn)
 
@@ -209,10 +203,42 @@ Có hai lựa chọn: mua bộ SparkFun Inventor's Kit, hoặc một **bộ Ardu
 - Giới hạn thời gian dùng màn hình: mỗi buổi chỉ 1 bài học và bài tập của bài đó (khoảng 20 phút).
 - Bố mẹ nối dây, bé lập trình và quan sát. Khi bé quen rồi, bé có thể tự cắm dây theo tấm hình dán breadboard, bố mẹ kiểm tra lại.
 
-## 9. Cần bạn duyệt
+## 9. Kế hoạch kỹ thuật trên Ong Nhỏ Code
+
+### 9.1 Các khối Arduino trong TurboWarp
+
+- Viết một **extension TurboWarp** tên "Arduino", các khối có tên tiếng Việt: `kết nối mạch`, `bật đèn chân (13)`, `tắt đèn chân (13)`, `đèn màu (đỏ)`, `còi kêu nốt (Đô) trong (0.5) giây`, `servo quay tới (90) độ`, `nút chân (2) được bấm?`, `độ sáng`, `núm xoay`, `khoảng cách (cm)`, `nhiệt độ (°C)`.
+- Extension nói chuyện với mạch qua **Web Serial** (cáp USB). Arduino chạy một **chương trình nạp sẵn**: bố mẹ hoặc giáo viên nạp một lần bằng Arduino IDE, sau đó không phải nạp lại.
+- Trang bài học đã điều khiển được TurboWarp qua `window.vm` (iframe cùng tên miền), nên **không cần build lại TurboWarp**: trang bài học tự nạp extension khi mở bài Arduino.
+- Máy chấm khối hiện tại **dùng được luôn** với khối Arduino, vì mỗi khối có mã riêng (ví dụ `arduino_ledOn`).
+- **Chế độ không có mạch**: nếu chưa cắm Arduino, sân khấu hiện một mạch ảo (đèn, còi, nút) để bé vẫn làm bài được.
+- Giới hạn: Web Serial chỉ chạy trên **Chrome hoặc Edge trên máy tính**, cần HTTPS khi đưa lên mạng (`localhost` thì không cần). Máy tính bảng chỉ dùng được chế độ mạch ảo.
+
+### 9.2 Nội dung khoá học
+
+- Viết khoá Arduino thành **gói nội dung** trong `content/packs/` theo đúng mẫu các gói hiện có: bài giảng, bước, khối `[[...]]`, câu hỏi, bài thực hành, dự án khởi đầu và lời giải mẫu.
+- Thêm thẻ **"Arduino"** trên *Bản đồ học*, cạnh *Bài học / Dự án trò chơi / Luyện thi*, để khoá Arduino không lẫn với các bài Scratch.
+- Khoá Arduino **không phụ thuộc vào việc nạp PDF**. Nếu quản trị nạp thêm PDF SIK hoặc ARDX, thẻ *Trang sách* sẽ hiện trang gốc tương ứng.
+- Thêm trang **"Nguồn tài liệu"** ghi nguồn CC BY-SA 4.0.
+
+### 9.3 Phần cần thêm vào máy chủ
+
+- Các dạng bài mới: xếp khối, nối hình, tô màu (chấm tự động); vẽ, ảnh/video, ghi âm (giáo viên chấm).
+- Nơi lưu file vẽ, ảnh và ghi âm trong `data/`, có kiểm tra quyền như file `.sb3` hiện nay.
+- Hộp bài cần chấm, chấm nhanh bằng sao, lời khen mẫu và ghi âm lời khen.
+- Huy hiệu theo chặng, giấy khen.
+
+### 9.4 Thứ tự làm
+
+1. Extension Arduino, chương trình cho mạch và chế độ mạch ảo.
+2. Bài mẫu 1.2 hoàn chỉnh (bài giảng, bài tập, chấm) để bạn chạy thử.
+3. Các dạng bài tập mới và phần chấm của giáo viên.
+4. Viết đủ 24 bài, dịch dần theo từng chặng để bạn duyệt.
+
+## 10. Cần bạn duyệt
 
 1. Danh sách 24 bài (20 bài chính và 4 bài thêm) có ổn không?
-2. Bài tập trên web: các dạng bài, cách chấm và câu hỏi mẫu 1.2 có phù hợp không? Có cần ghi âm và chụp ảnh mạch không?
+2. Bài tập trên web: các dạng bài mới (xếp khối, nối hình, tô màu, vẽ, ảnh mạch, ghi âm) và phần chấm thêm cho giáo viên ở mục 5 có cần hết không?
 3. Giọng văn của bài mẫu 1.2 có phù hợp không (cách xưng hô "con", độ dài câu)?
 4. Cảm biến nhiệt độ dùng **TMP36** hay **DHT11**?
-5. Web TurboWarp của bạn nằm ở repo GitHub nào, và đang lưu bài nộp ở đâu (Firebase, Supabase, máy chủ riêng...)?
+5. Kế hoạch kỹ thuật ở mục 9 (thẻ "Arduino" riêng trên bản đồ học, chế độ mạch ảo, thứ tự làm) có ổn không?
