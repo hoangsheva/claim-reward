@@ -1,10 +1,10 @@
-# Đề cương: "Bé chơi Arduino cùng TurboWarp" (bản nháp 3, để duyệt)
+# Đề cương: "Bé chơi Arduino cùng TurboWarp" (bản nháp 4, để duyệt)
 
 Dành cho: bé 6 tuổi học cùng bố mẹ · Mỗi bài 10–15 phút · Lập trình bằng khối TurboWarp, mạch Arduino Uno.
 
 Bộ tài liệu gồm 2 cuốn:
 - **Sách học**: trên web, mỗi bài có phần cho bé và phần cho bố mẹ.
-- **Vở bài tập**: in ra giấy, bé làm sau mỗi bài.
+- **Bài tập trên web**: bé làm sau mỗi bài; giáo viên xem lại và chấm ngay trên web.
 
 ## 1. Sách nguồn
 
@@ -20,7 +20,7 @@ Nguồn tải:
 
 ### 1.1 Giấy phép
 
-- Sách A và B đều là **CC BY-SA**. Nội dung CC BY-SA 3.0 được phép phát hành lại theo CC BY-SA 4.0, nên **gộp A và B làm một được**. Toàn bộ sách học và vở bài tập phát hành theo **CC BY-SA 4.0**.
+- Sách A và B đều là **CC BY-SA**. Nội dung CC BY-SA 3.0 được phép phát hành lại theo CC BY-SA 4.0, nên **gộp A và B làm một được**. Toàn bộ sách học và bài tập phát hành theo **CC BY-SA 4.0**.
 - Không dùng *Arduino Projects Book* (cả lời, hình lẫn ý tưởng), vì giấy phép CC BY-NC-SA của sách này không gộp được với CC BY-SA. Mọi bài học chỉ lấy từ sách A và B, hoặc do mình tự viết.
 - Trang "Nguồn tài liệu" trên web sẽ ghi:
   > Phỏng theo *SparkFun Inventor's Kit Experiment Guide v4.1* (SparkFun Electronics, CC BY-SA 4.0) và *ARDX Experimenter's Guide* (Oomlout, CC BY-SA). Nội dung đã được lược bớt, dịch và biên soạn lại cho trẻ 6 tuổi. Phát hành theo CC BY-SA 4.0.
@@ -84,7 +84,7 @@ Nguồn tải:
 2. 🧩 **Ghép khối**: hình các khối cần dùng, đánh số 1, 2, 3. Bài mẫu đã mở sẵn trong TurboWarp.
 3. ▶️ **Thử**: bấm cờ xanh để chạy.
 4. ⭐ **Thưởng**: nhận sao và một câu "Thử thêm" nếu bé muốn chơi tiếp.
-5. ✏️ **Làm vở bài tập**: trang tương ứng trong vở.
+5. ✏️ **Làm bài tập**: mở phần bài tập của bài, làm xong bấm "Nộp bài".
 
 **Phần cho bố mẹ** (thu gọn, bấm để mở):
 - Linh kiện cần chuẩn bị (có ảnh).
@@ -94,70 +94,78 @@ Nguồn tải:
 - Gợi ý câu hỏi để trò chuyện với bé.
 - Ghi nguồn của bài.
 
-## 5. Vở bài tập "Bé chơi Arduino"
+## 5. Bài tập trên web "Bé chơi Arduino"
 
-Vở gồm các trang khổ A4, in đen trắng được, có chỗ cho bé tô màu. Mỗi bài có 1 trang bài tập. Cuối mỗi chặng có 1 trang ôn tập và 1 **huy hiệu** để cắt ra. Mỗi bài tập dành cho bé chỉ cần **tô, nối, khoanh, dán hoặc vẽ**, không cần viết chữ.
+Bài tập làm **ngay trên web**, không in ra giấy. Bé làm bài trên máy tính hoặc máy tính bảng; giáo viên (hoặc bố mẹ) xem lại bài làm và chấm trên cùng trang web, theo cách web TurboWarp của bạn đang làm.
 
-### 5.1 Các dạng bài tập
+### 5.1 Ai làm gì
 
-| Dạng | Ví dụ | Bé luyện được gì |
-|---|---|---|
-| 🎨 **Tô màu** | Tô đèn giao thông đúng thứ tự đỏ, vàng, xanh | Nhận biết linh kiện, thứ tự |
-| 🔗 **Nối hình** | Nối "còi" với "🔊", "đèn" với "💡", "núm xoay" với "🔄" | Linh kiện nào làm việc gì |
-| ✂️ **Cắt dán khối** | Cắt các khối lệnh in sẵn và dán đúng thứ tự | Trình tự chương trình |
-| 🤔 **Đoán xem** | "Đổi `chờ 1 giây` thành `chờ 3 giây`, đèn nháy như 🐇 hay như 🐢?" Bé khoanh hình | Dự đoán kết quả |
-| 🔍 **Tìm chỗ sai** | Chương trình thiếu khối `tắt đèn`; bé khoanh chỗ cần sửa | Tìm lỗi chương trình |
-| 🖍️ **Vẽ ý tưởng** | "Con muốn làm đèn ngủ cho ai?" Bé vẽ ra | Sáng tạo |
-| ⭐ **Dán sao** | Bảng 24 ô; bé dán hoặc tô một sao sau mỗi bài | Tạo động lực |
-
-### 5.2 Các trang trong vở
-
-| Trang | Nội dung |
+| Vai trò | Làm gì trên web |
 |---|---|
-| Bìa | Tên bé, ảnh bé (dán vào) |
-| Gặp gỡ các bạn linh kiện | Trang hình các linh kiện, mỗi bạn có một cái tên vui: "bạn Đèn", "bạn Còi", "bạn Núm Xoay"... |
-| Bài 0.1 → 5.3 | 24 trang bài tập, mỗi bài 1 trang |
-| Ôn tập chặng 0 → 5 | 6 trang, trộn các dạng bài |
-| Huy hiệu | 6 huy hiệu để cắt: "Bé làm quen", "Bé ánh sáng", "Bé âm nhạc", "Bé chuyển động", "Bé nóng lạnh", "Kỹ sư IoT nhí" |
-| Bảng sao | 24 ô |
-| Cuối vở | "Giấy khen Kỹ sư nhí" để bố mẹ trao cho bé |
+| 👧 **Bé** | Vào lớp bằng **ảnh đại diện + mã lớp**, không cần gõ mật khẩu. Làm bài, bấm "Nộp bài", xem sao và lời khen của cô |
+| 👩‍🏫 **Giáo viên** | Tạo lớp, thêm bé, xem bài nộp, chấm sao và nhận xét, xem tiến độ cả lớp |
+| 👨‍👩‍👧 **Bố mẹ** (tuỳ chọn) | Xem bài làm và nhận xét của cô dành cho con mình |
 
-**Tổng cộng khoảng 40 trang.** Vở sẽ có trên web dạng PDF để tải, in được từng trang hoặc in cả cuốn.
+### 5.2 Các dạng bài tập và cách chấm
 
-### 5.3 Trang mẫu: Bài 1.2 "Đèn nháy như tim đập"
+Mỗi bài học có 3–4 câu bài tập, làm trong khoảng 5 phút. Bé chỉ cần **chạm, kéo thả, tô hoặc vẽ**, không cần gõ chữ. Mỗi câu đều có nút 🔊 đọc đề.
 
-```
-┌─────────────────────────────────────────────┐
-│  Bài 1.2  Đèn nháy như tim đập 💓    ☆ ☆ ☆   │
-├─────────────────────────────────────────────┤
-│ 1. 🎨 Tô màu đỏ cho đèn đang SÁNG:            │
-│        ( )      ( )      ( )      ( )       │
-│       sáng     tắt     sáng     tắt         │
-├─────────────────────────────────────────────┤
-│ 2. ✂️ Cắt các khối ở cuối trang, dán vào     │
-│    đúng thứ tự để đèn nháy:                  │
-│    [ 🚩 khi bấm cờ xanh ]                    │
-│    [ 🔁 liên tục ┐                           │
-│    │  [ ...... ]                             │
-│    │  [ ...... ]                             │
-│    │  [ ...... ]                             │
-│    │  [ ...... ]                             │
-│    └─────────────┘                           │
-├─────────────────────────────────────────────┤
-│ 3. 🤔 Đổi "chờ 1 giây" thành "chờ 0.2 giây". │
-│    Đèn nháy giống bạn nào? Khoanh tròn:      │
-│          🐇 Thỏ             🐢 Rùa           │
-├─────────────────────────────────────────────┤
-│ 4. 🖍️ Vẽ một thứ cũng nhấp nháy mà con biết: │
-│    ┌───────────────────────┐                 │
-│    │                       │                 │
-│    └───────────────────────┘                 │
-├ ✂ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┤
-│ [💡 bật đèn] [⏱️ chờ 1 giây]                 │
-│ [💡 tắt đèn] [⏱️ chờ 1 giây]                 │
-└─────────────────────────────────────────────┘
-Đáp án cho bố mẹ: bật đèn → chờ → tắt đèn → chờ · Thỏ 🐇
-```
+| Dạng | Bé làm gì trên web | Cách chấm |
+|---|---|---|
+| 🎨 **Tô màu** | Chạm vào đèn để tô màu (ví dụ tô đèn giao thông đúng thứ tự) | **Tự động** |
+| 🔗 **Nối hình** | Kéo đường nối "còi" với 🔊, "đèn" với 💡 | **Tự động** |
+| 🧩 **Xếp khối** | Kéo các khối lệnh vào đúng thứ tự | **Tự động** |
+| 🤔 **Đoán xem** | Chạm vào một hình, ví dụ 🐇 hay 🐢 | **Tự động** |
+| 🔍 **Tìm chỗ sai** | Chạm vào khối bị sai hoặc bị thiếu | **Tự động** |
+| 🖍️ **Vẽ ý tưởng** | Vẽ bằng ngón tay hoặc chuột lên khung vẽ | **Giáo viên chấm** |
+| 🎤 **Kể cho cô nghe** | Bấm nút ghi âm (tối đa 30 giây) để kể về sản phẩm của mình | **Giáo viên chấm** |
+| 🚀 **Nộp dự án TurboWarp** | Bấm "Nộp bài" ngay trong trình soạn thảo; có thể kèm ảnh hoặc video ngắn chụp mạch đang chạy | **Giáo viên chấm** |
+
+**Chấm tự động:**
+- Bé làm sai: web nói nhẹ nhàng "Gần đúng rồi, con thử lại nhé!" và cho làm lại, không trừ điểm.
+- Web ghi lại số lần bé thử, để giáo viên biết câu nào bé thấy khó.
+
+**Giáo viên chấm:**
+- Cho 1–3 ⭐ và một lời nhận xét. Có sẵn các câu khen mẫu để bấm chọn nhanh, ví dụ "Con vẽ đẹp quá!" hay "Đèn nháy đúng rồi!".
+- Có thể ghi âm lời khen, vì bé chưa đọc được.
+- Có thể bấm "Cho làm lại" kèm gợi ý.
+
+### 5.3 Trang của giáo viên
+
+| Màn hình | Nội dung |
+|---|---|
+| **Lớp học** | Danh sách các bé; bảng tiến độ mỗi bé × mỗi bài, có màu ✅ đã xong, 🟡 chờ chấm, ⬜ chưa làm |
+| **Hộp bài cần chấm** | Các bài vẽ, ghi âm và dự án đang chờ, xếp theo thời gian nộp. Chấm xong thì tự chuyển sang bài tiếp theo |
+| **Xem bài một bé** | Toàn bộ bài làm của bé: đáp án, số lần thử, hình vẽ, ghi âm, mở dự án TurboWarp để chạy thử |
+| **Thống kê** | Câu nào nhiều bé làm sai, để giáo viên giảng lại |
+| **Xuất báo cáo** | Tải bảng điểm cả lớp (CSV hoặc Excel) |
+
+### 5.4 Phần thưởng
+
+- Mỗi bài xong được ⭐. Xong mỗi chặng được 1 **huy hiệu**: "Bé làm quen", "Bé ánh sáng", "Bé âm nhạc", "Bé chuyển động", "Bé nóng lạnh", "Kỹ sư IoT nhí".
+- Xong cả khoá học được **giấy khen "Kỹ sư nhí"** để in ra.
+- Không có bảng xếp hạng giữa các bé, để bé không bị so sánh với bạn.
+
+### 5.5 Câu hỏi mẫu: Bài 1.2 "Đèn nháy như tim đập"
+
+| Câu | Dạng | Đề (đọc to) | Đáp án / Cách chấm |
+|---|---|---|---|
+| 1 | 🎨 Tô màu | "Con chạm để tô đỏ những đèn đang **sáng** nhé!" (4 đèn có chữ sáng, tắt, sáng, tắt) | Đèn 1 và 3 · tự động |
+| 2 | 🧩 Xếp khối | "Con kéo các khối vào trong vòng lặp để đèn nháy nhé!" | `bật đèn` → `chờ 1 giây` → `tắt đèn` → `chờ 1 giây` · tự động |
+| 3 | 🤔 Đoán xem | "Đổi *chờ 1 giây* thành *chờ 0.2 giây*, đèn nháy giống bạn nào?" | 🐇 Thỏ · tự động |
+| 4 | 🖍️ Vẽ | "Con vẽ một thứ cũng nhấp nháy mà con biết nhé!" | Giáo viên chấm sao và nhận xét |
+| 5 | 🚀 Dự án | "Con nộp chương trình đèn nháy của con cho cô nhé!" (tuỳ chọn: chụp ảnh đèn đang sáng) | Giáo viên mở dự án chạy thử, chấm sao |
+
+### 5.6 Bảo vệ dữ liệu của trẻ
+
+- Chỉ lưu **tên gọi ở nhà hoặc biệt danh** và ảnh đại diện hoạt hình, không cần họ tên đầy đủ, ngày sinh hay ảnh thật.
+- Chỉ giáo viên của lớp và bố mẹ của bé xem được bài làm của bé. Không có trang công khai.
+- Ảnh, video và ghi âm của bé tự xoá sau khi kết thúc khoá học (thời gian lưu do bạn quyết định).
+- Bố mẹ có thể yêu cầu xoá toàn bộ dữ liệu của con.
+
+### 5.7 Phần kỹ thuật (phụ thuộc web hiện tại của bạn)
+
+Phần chấm bài cần nơi lưu dữ liệu và tài khoản giáo viên. Mình sẽ **dùng lại hệ thống đang có trong web TurboWarp của bạn** (đăng nhập, lớp học, nộp và chấm bài), chỉ thêm các dạng bài tập mới. Vì vậy mình cần xem mã nguồn web đó trước khi làm.
 
 ## 6. Bài mẫu trong sách học (để bạn duyệt giọng văn)
 
@@ -198,12 +206,13 @@ Có hai lựa chọn: mua bộ SparkFun Inventor's Kit, hoặc một **bộ Ardu
 
 - Chỉ cấp điện bằng cáp USB nối máy tính (5V, an toàn). **Không bao giờ** nối mạch vào ổ điện.
 - Linh kiện nhỏ, chân LED nhọn: bố mẹ ngồi cùng bé và cất linh kiện sau mỗi buổi học.
-- Vở bài tập có phần cắt dán: dùng kéo an toàn cho trẻ em.
+- Giới hạn thời gian dùng màn hình: mỗi buổi chỉ 1 bài học và bài tập của bài đó (khoảng 20 phút).
 - Bố mẹ nối dây, bé lập trình và quan sát. Khi bé quen rồi, bé có thể tự cắm dây theo tấm hình dán breadboard, bố mẹ kiểm tra lại.
 
 ## 9. Cần bạn duyệt
 
 1. Danh sách 24 bài (20 bài chính và 4 bài thêm) có ổn không?
-2. Vở bài tập: các dạng bài và trang mẫu 1.2 có phù hợp không? Vở in đen trắng hay in màu?
+2. Bài tập trên web: các dạng bài, cách chấm và câu hỏi mẫu 1.2 có phù hợp không? Có cần ghi âm và chụp ảnh mạch không?
 3. Giọng văn của bài mẫu 1.2 có phù hợp không (cách xưng hô "con", độ dài câu)?
 4. Cảm biến nhiệt độ dùng **TMP36** hay **DHT11**?
+5. Web TurboWarp của bạn nằm ở repo GitHub nào, và đang lưu bài nộp ở đâu (Firebase, Supabase, máy chủ riêng...)?
