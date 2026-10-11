@@ -1,4 +1,4 @@
-# Đề cương: "Bé chơi Arduino cùng TurboWarp" (bản nháp 2, để duyệt)
+# Đề cương: "Bé chơi Arduino cùng TurboWarp" (bản nháp 3, để duyệt)
 
 Dành cho: bé 6 tuổi học cùng bố mẹ · Mỗi bài 10–15 phút · Lập trình bằng khối TurboWarp, mạch Arduino Uno.
 
@@ -12,20 +12,18 @@ Bộ tài liệu gồm 2 cuốn:
 |---|---|---|---|
 | A | **SparkFun Inventor's Kit Experiment Guide v4.1** (SparkFun Electronics) | CC BY-SA 4.0 | **Sách chính**: thí nghiệm, sơ đồ nối dây, lỗi thường gặp. Được dịch và chỉnh sửa |
 | B | **ARDX Arduino Experimenter's Guide** (Oomlout) | CC BY-SA | Thêm bài đèn chạy đuổi, bài phát nhạc, và **tấm hình in dán lên breadboard** để biết cắm linh kiện vào đâu. Được dịch và chỉnh sửa |
-| C | **Arduino Projects Book** (Arduino, đi kèm Arduino Starter Kit) | CC BY-NC-SA 3.0 | **Chỉ lấy ý tưởng dự án**, mình tự viết lại toàn bộ lời và hình (lý do ở mục 1.1) |
 | + | *Arduino Programming Notebook* (Brian W. Evans) | CC BY-SA 3.0 | Tham khảo cho bố mẹ, không đưa vào phần của bé |
 
 Nguồn tải:
 - A: https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41
 - B: https://haseloff.plantsci.cam.ac.uk/resources/Arduino/ARDX-EG-OOML-DD.pdf (bản lưu tại Đại học Cambridge; trang gốc là ardx.org / oomlout.com)
-- C: đi kèm Arduino Starter Kit; cần tìm bản PDF chính thức của Arduino
 
-### 1.1 Gộp các giấy phép thế nào
+### 1.1 Giấy phép
 
 - Sách A và B đều là **CC BY-SA**. Nội dung CC BY-SA 3.0 được phép phát hành lại theo CC BY-SA 4.0, nên **gộp A và B làm một được**. Toàn bộ sách học và vở bài tập phát hành theo **CC BY-SA 4.0**.
-- Sách C là **CC BY-NC-SA** (cấm dùng thương mại). Giấy phép này **không tương thích** với CC BY-SA, nên không thể chép lời hay hình của sách C vào cùng một cuốn với A và B. **Ý tưởng** dự án thì không có bản quyền, nên mình chỉ lấy ý tưởng (ví dụ "bảng điều khiển phi thuyền", "đàn ánh sáng") rồi tự viết lời và tự vẽ hình.
+- Không dùng *Arduino Projects Book* (cả lời, hình lẫn ý tưởng), vì giấy phép CC BY-NC-SA của sách này không gộp được với CC BY-SA. Mọi bài học chỉ lấy từ sách A và B, hoặc do mình tự viết.
 - Trang "Nguồn tài liệu" trên web sẽ ghi:
-  > Phỏng theo *SparkFun Inventor's Kit Experiment Guide v4.1* (SparkFun Electronics, CC BY-SA 4.0) và *ARDX Experimenter's Guide* (Oomlout, CC BY-SA). Một số ý tưởng dự án lấy cảm hứng từ *Arduino Projects Book* (Arduino). Nội dung đã được lược bớt, dịch và biên soạn lại cho trẻ 6 tuổi. Phát hành theo CC BY-SA 4.0.
+  > Phỏng theo *SparkFun Inventor's Kit Experiment Guide v4.1* (SparkFun Electronics, CC BY-SA 4.0) và *ARDX Experimenter's Guide* (Oomlout, CC BY-SA). Nội dung đã được lược bớt, dịch và biên soạn lại cho trẻ 6 tuổi. Phát hành theo CC BY-SA 4.0.
 
 > Cần đối chiếu: tên và thứ tự các thí nghiệm bên dưới lấy theo cấu trúc sách mà mình biết. Từ môi trường làm việc này không mở được các trang tải sách, nên trước khi dịch mình sẽ kiểm tra lại với bản PDF.
 
@@ -42,40 +40,40 @@ Nguồn tải:
 | | 1.2 ⭐ | Đèn nháy như tim đập | Đèn nhấp nháy, nhanh hoặc chậm | A 1A · B CIRC-01 |
 | | 1.3 ⭐ | Đèn giao thông | 3 đèn đỏ, vàng, xanh bật lần lượt | Tự viết, dựa trên A 1A |
 | | 1.4 ➕ | Đèn chạy đuổi | 4 đèn sáng nối đuôi nhau như đoàn tàu | B CIRC-02 (rút từ 8 đèn còn 4) |
-| | 1.5 ➕ | Bảng điều khiển phi thuyền | Bấm nút thì đèn xanh tắt, 2 đèn đỏ nháy: "Phi thuyền cất cánh!" | Ý tưởng từ C |
+| | 1.5 ⭐ | Nút bấm thần kỳ | Giữ nút thì đèn sáng, thả ra thì đèn tắt | B CIRC-07 |
 | | 1.6 ⭐ | Núm xoay thần kỳ | Xoay núm thì mèo trên màn hình đi theo | A 1B · B CIRC-08 |
 | | 1.7 ⭐ | Đèn ngủ biết tự bật | Che tay lên cảm biến thì đèn sáng | A 1C · B CIRC-09 |
 | | 1.8 ⭐ | Đèn cầu vồng | Đèn đổi màu đỏ, xanh lá, xanh dương | A 1D · B CIRC-12 |
 | **2. Âm thanh** | 2.1 ⭐ | Còi kêu bíp bíp | Bấm phím trên máy tính thì còi kêu | A 2A |
 | | 2.2 ⭐ | Còi biết hát | Còi phát bài "Kìa con bướm vàng" | B CIRC-06 (đổi bài hát) |
-| | 2.3 ⭐ | Chiếc kèn tí hon | Mỗi nút bấm phát một nốt nhạc | A 2B · ý tưởng từ C |
-| | 2.4 ➕ | Đàn ánh sáng | Đưa tay lên xuống trên cảm biến thì tiếng còi trầm bổng | Ý tưởng từ C |
+| | 2.3 ⭐ | Chiếc kèn tí hon | Mỗi nút bấm phát một nốt nhạc | A 2B |
+| | 2.4 ➕ | Núm chỉnh to nhỏ | Xoay núm thì tiếng còi to lên hoặc nhỏ đi | A 2A (núm chỉnh âm lượng trong mạch còi) |
 | | 2.5 ⭐ | Trò chơi bắt chước | Đèn sáng theo thứ tự, bé bấm nút lặp lại (3 bước) | A 2C |
 | **3. Chuyển động** | 3.1 ⭐ | Cánh tay vẫy chào | Động cơ servo vẫy qua vẫy lại | A 3A · B CIRC-04 |
 | | 3.2 ⭐ | Đôi mắt dơi | Cảm biến khoảng cách: tay lại gần thì mèo kêu "meo" | A 3B |
 | | 3.3 ⭐ | Chuông báo có khách | Có người lại gần thì còi kêu và đèn nháy | A 3C |
 | **4. Nóng – lạnh** | 4.1 ⭐ | Hôm nay nóng hay lạnh? | Trời nóng hiện mặt trời, trời lạnh hiện người tuyết | A 4B · B CIRC-10 |
-| | 4.2 ➕ | Bàn tay ai ấm nhất? | Bé và bố mẹ thay nhau nắm cảm biến; tay càng ấm thì càng nhiều đèn sáng | Ý tưởng từ C |
+| | 4.2 ➕ | Nhiệt kế đèn màu | Nóng thì đèn sáng màu đỏ, mát thì đèn sáng màu xanh | Ghép A 4B với A 1D · B CIRC-10 với CIRC-12 |
 | **5. IoT nhí** | 5.1 ⭐ | Mạch nói chuyện với máy tính | Bấm nút trên mạch thì nhân vật trên màn hình nhảy, bấm nút trên màn hình thì đèn trên mạch sáng | Tự viết |
-| | 5.2 ➕ | Quả cầu tiên tri | Bấm nút thì màn hình hiện câu trả lời vui ("Có!", "Hỏi lại nhé!") | Ý tưởng từ C (thay màn hình LCD bằng TurboWarp) |
+| | 5.2 ➕ | Đèn báo từ máy tính | Bé bấm hình trên màn hình thì đèn trên mạch đổi màu và còi kêu "ting" | Tự viết (dùng mạch A 1D và A 2A) |
 | | 5.3 ⭐ | Ngôi nhà thông minh mini | Ghép lại: trời tối thì đèn tự bật, có người đến thì chuông kêu | Tự viết (dùng mạch 1.7 và 3.2) |
 
-**Tổng cộng: 24 bài, trong đó 19 bài chính và 5 bài thêm.** Nếu mỗi tuần học 2 bài thì mất khoảng 2,5–3 tháng.
+**Tổng cộng: 24 bài, trong đó 20 bài chính và 4 bài thêm.** Nếu mỗi tuần học 2 bài thì mất khoảng 2,5–3 tháng.
 
 ### Mỗi sách đóng góp gì
 
-| | A: SIK | B: ARDX | C: Projects Book | Tự viết |
-|---|---|---|---|---|
-| Số bài | 14 | 8 (trùng phần lớn với A) | 6 ý tưởng | 7 |
-| Phần lấy | Thí nghiệm, sơ đồ, lỗi thường gặp | Đèn chạy đuổi, phát nhạc, tấm hình dán breadboard | Ý tưởng các dự án vui | Làm quen, đèn giao thông, IoT |
+| | A: SIK | B: ARDX | Tự viết |
+|---|---|---|---|
+| Số bài dùng | 15 | 11 (nhiều bài trùng với A; khi trùng, lấy sơ đồ của A và tấm hình dán breadboard của B) | 7 |
+| Phần lấy | Thí nghiệm, sơ đồ, lỗi thường gặp | Đèn chạy đuổi, nút bấm, phát nhạc, tấm hình dán breadboard | Làm quen, đèn giao thông, IoT |
 
 ## 3. Những phần lược bỏ
 
 | Phần | Lý do bỏ | Thay bằng |
 |---|---|---|
-| Màn hình LCD (A 4A, 4C; C: Crystal Ball) | Bé chưa đọc tốt; nối dây nhiều và dễ sai | Hiện hình trên màn hình TurboWarp |
+| Màn hình LCD (A 4A, 4C) | Bé chưa đọc tốt; nối dây nhiều và dễ sai | Hiện hình trên màn hình TurboWarp |
 | Robot (A, chặng 5) | Nhiều linh kiện, dễ nối nhầm, tốn kém | Phần mở rộng cho bé lớn hơn |
-| Động cơ DC, relay, transistor, thanh ghi dịch (B; C: chong chóng, zoetrope) | Cần nguồn điện riêng; mạch khó với bé | Bỏ |
+| Động cơ DC, relay, transistor, thanh ghi dịch (B CIRC-03, 05, 11) | Cần nguồn điện riêng; mạch khó với bé | Bỏ |
 | Lý thuyết điện (định luật Ohm, PWM...) | Quá khó với bé | Một câu ví von trong phần bố mẹ |
 | Code C++ | Bé dùng khối TurboWarp | Code gốc chỉ để ở phần bố mẹ, nếu cần |
 
@@ -205,8 +203,7 @@ Có hai lựa chọn: mua bộ SparkFun Inventor's Kit, hoặc một **bộ Ardu
 
 ## 9. Cần bạn duyệt
 
-1. Danh sách 24 bài (19 bài chính và 5 bài thêm) có ổn không?
-2. Có đồng ý cách xử lý sách C (chỉ lấy ý tưởng, tự viết lại) không?
-3. Vở bài tập: các dạng bài và trang mẫu 1.2 có phù hợp không? Vở in đen trắng hay in màu?
-4. Giọng văn của bài mẫu 1.2 có phù hợp không (cách xưng hô "con", độ dài câu)?
-5. Cảm biến nhiệt độ dùng **TMP36** hay **DHT11**?
+1. Danh sách 24 bài (20 bài chính và 4 bài thêm) có ổn không?
+2. Vở bài tập: các dạng bài và trang mẫu 1.2 có phù hợp không? Vở in đen trắng hay in màu?
+3. Giọng văn của bài mẫu 1.2 có phù hợp không (cách xưng hô "con", độ dài câu)?
+4. Cảm biến nhiệt độ dùng **TMP36** hay **DHT11**?
