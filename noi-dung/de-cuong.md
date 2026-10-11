@@ -1,4 +1,4 @@
-# Đề cương: "Bé chơi Arduino cùng TurboWarp" (bản nháp 5, để duyệt)
+# Đề cương: "Bé chơi Arduino cùng TurboWarp" (bản nháp 6, để duyệt)
 
 Dành cho: bé 6 tuổi học cùng bố mẹ · Mỗi bài 10–15 phút · Lập trình bằng khối TurboWarp, mạch Arduino Uno · Chạy trên web **Ong Nhỏ Code**.
 
@@ -21,6 +21,7 @@ Nguồn tải:
 ### 1.1 Giấy phép
 
 - Sách A và B đều là **CC BY-SA**. Nội dung CC BY-SA 3.0 được phép phát hành lại theo CC BY-SA 4.0, nên **gộp A và B làm một được**. Toàn bộ sách học và bài tập phát hành theo **CC BY-SA 4.0**.
+- *Beginning Arduino* (Michael McRoberts, Apress 2010) chỉ dùng để **đối chiếu danh sách linh kiện** bạn đang có. Sách ghi "All rights reserved", nên không dịch, không chép lời, hình hay code của sách, và không đưa file PDF lên web.
 - Không dùng *Arduino Projects Book* (cả lời, hình lẫn ý tưởng), vì giấy phép CC BY-NC-SA của sách này không gộp được với CC BY-SA. Mọi bài học chỉ lấy từ sách A và B, hoặc do mình tự viết.
 - Trang "Nguồn tài liệu" trên web sẽ ghi:
   > Phỏng theo *SparkFun Inventor's Kit Experiment Guide v4.1* (SparkFun Electronics, CC BY-SA 4.0) và *ARDX Experimenter's Guide* (Oomlout, CC BY-SA). Nội dung đã được lược bớt, dịch và biên soạn lại cho trẻ 6 tuổi. Phát hành theo CC BY-SA 4.0.
@@ -43,22 +44,28 @@ Nguồn tải:
 | | 1.5 ⭐ | Nút bấm thần kỳ | Giữ nút thì đèn sáng, thả ra thì đèn tắt | B CIRC-07 |
 | | 1.6 ⭐ | Núm xoay thần kỳ | Xoay núm thì mèo trên màn hình đi theo | A 1B · B CIRC-08 |
 | | 1.7 ⭐ | Đèn ngủ biết tự bật | Che tay lên cảm biến thì đèn sáng | A 1C · B CIRC-09 |
-| | 1.8 ⭐ | Đèn cầu vồng | Đèn đổi màu đỏ, xanh lá, xanh dương | A 1D · B CIRC-12 |
+| | 1.8 ⭐ | Đèn cầu vồng | Trộn 3 đèn đỏ, xanh lá, xanh dương thành nhiều màu | A 1D · B CIRC-12 |
+| | 1.9 ➕ | Màn hình mặt cười | Bảng đèn 8×8 hiện mặt cười, trái tim, mũi tên; bé vẽ hình trên màn hình máy tính thì bảng đèn hiện theo | Tự viết |
 | **2. Âm thanh** | 2.1 ⭐ | Còi kêu bíp bíp | Bấm phím trên máy tính thì còi kêu | A 2A |
 | | 2.2 ⭐ | Còi biết hát | Còi phát bài "Kìa con bướm vàng" | B CIRC-06 (đổi bài hát) |
 | | 2.3 ⭐ | Chiếc kèn tí hon | Mỗi nút bấm phát một nốt nhạc | A 2B |
 | | 2.4 ➕ | Núm chỉnh to nhỏ | Xoay núm thì tiếng còi to lên hoặc nhỏ đi | A 2A (núm chỉnh âm lượng trong mạch còi) |
 | | 2.5 ⭐ | Trò chơi bắt chước | Đèn sáng theo thứ tự, bé bấm nút lặp lại (3 bước) | A 2C |
+| | 2.6 ➕ | Gõ cửa cốc cốc | Gõ nhẹ lên bàn cạnh miếng piezo thì đèn sáng và mèo trên màn hình chạy ra mở cửa | Tự viết |
 | **3. Chuyển động** | 3.1 ⭐ | Cánh tay vẫy chào | Động cơ servo vẫy qua vẫy lại | A 3A · B CIRC-04 |
 | | 3.2 ⭐ | Đôi mắt dơi | Cảm biến khoảng cách: tay lại gần thì mèo kêu "meo" | A 3B |
 | | 3.3 ⭐ | Chuông báo có khách | Có người lại gần thì còi kêu và đèn nháy | A 3C |
+| | 3.4 ➕ | Tay cầm chơi game | Đẩy cần điều khiển (joystick) thì nhân vật trên màn hình chạy theo và servo quay theo | Tự viết |
 | **4. Nóng – lạnh** | 4.1 ⭐ | Hôm nay nóng hay lạnh? | Trời nóng hiện mặt trời, trời lạnh hiện người tuyết | A 4B · B CIRC-10 |
 | | 4.2 ➕ | Nhiệt kế đèn màu | Nóng thì đèn sáng màu đỏ, mát thì đèn sáng màu xanh | Ghép A 4B với A 1D · B CIRC-10 với CIRC-12 |
 | **5. IoT nhí** | 5.1 ⭐ | Mạch nói chuyện với máy tính | Bấm nút trên mạch thì nhân vật trên màn hình nhảy, bấm nút trên màn hình thì đèn trên mạch sáng | Tự viết |
 | | 5.2 ➕ | Đèn báo từ máy tính | Bé bấm hình trên màn hình thì đèn trên mạch đổi màu và còi kêu "ting" | Tự viết (dùng mạch A 1D và A 2A) |
 | | 5.3 ⭐ | Ngôi nhà thông minh mini | Ghép lại: trời tối thì đèn tự bật, có người đến thì chuông kêu | Tự viết (dùng mạch 1.7 và 3.2) |
+| | 5.4 ➕ | Thẻ thần kỳ | Chạm thẻ RFID vào đầu đọc thì màn hình chào đúng tên chủ thẻ, đèn xanh sáng: "Mời vào!" | Tự viết |
 
-**Tổng cộng: 24 bài, trong đó 20 bài chính và 4 bài thêm.** Nếu mỗi tuần học 2 bài thì mất khoảng 2,5–3 tháng.
+**Tổng cộng: 28 bài, trong đó 20 bài chính và 8 bài thêm.** Nếu mỗi tuần học 2 bài thì 20 bài chính mất khoảng 2,5 tháng; bài thêm học khi bé thích.
+
+Bốn bài thêm 1.9, 2.6, 3.4, 5.4 được bổ sung vì bộ linh kiện của bạn có bảng đèn 8×8, miếng piezo, cần điều khiển và đầu đọc RFID (xem mục 7).
 
 ### Mỗi sách đóng góp gì
 
@@ -181,20 +188,48 @@ Khi bé làm sai câu chấm tự động, web nói "Gần đúng rồi, con th�
 > Đổi số `1` thành `0.2`. Đèn nháy nhanh hay chậm hơn? Tim lúc con chạy nhảy cũng đập nhanh như thế đấy!
 
 **Phần cho bố mẹ**
-- Cần: Arduino Uno, cáp USB, 1 đèn LED, 1 điện trở 330Ω, breadboard, 2 dây nối.
+- Cần: Arduino Uno, cáp USB, 1 đèn LED, 1 điện trở 150–330Ω, breadboard, 2 dây nối.
 - Nối dây: chân dài của LED nối vào chân số 13 qua điện trở, chân ngắn nối vào GND (theo hình mạch 1A trong sách A). In tấm hình dán breadboard (dựa trên CIRC-01 trong sách B), đặt lên breadboard rồi cắm theo hình.
 - Đèn không sáng? Thử cắm ngược LED lại. LED chỉ sáng khi cắm đúng chiều.
 - Gợi ý hỏi bé: "Ngoài đèn ra, còn cái gì cứ bật tắt liên tục nữa?" (đèn giao thông, đèn xe cứu thương...)
 
-## 7. Linh kiện cần mua
+## 7. Linh kiện: đối chiếu với bộ của bạn
 
-Có hai lựa chọn: mua bộ SparkFun Inventor's Kit, hoặc một **bộ Arduino Uno Starter Kit** phổ thông bán ở Việt Nam. Bộ phổ thông cần có:
+Bạn có các linh kiện giống trong sách *Beginning Arduino* (Apress). Bảng dưới so từng bài với linh kiện trong sách đó.
 
-- Arduino Uno R3 và cáp USB, breadboard, dây nối
-- 6 đèn LED (2 đỏ, 2 vàng, 2 xanh) và 1 đèn LED RGB; điện trở 330Ω
-- 4 nút bấm, 1 biến trở (núm xoay), 1 quang trở và 1 điện trở 10kΩ
-- 1 còi buzzer, 1 servo SG90, 1 cảm biến siêu âm HC-SR04
-- 1 cảm biến nhiệt độ (TMP36 như trong sách A và B, hoặc thay bằng DHT11)
+✅ = có trong sách · ❓ = sách có nhắc đến nhưng cần bạn xác nhận đã có · 🔁 = khác linh kiện trong SIK/ARDX, khối lệnh và hướng dẫn nối dây sẽ viết theo linh kiện của bạn
+
+| Bài | Linh kiện dùng | Trong bộ của bạn | Ghi chú |
+|---|---|---|---|
+| Mọi bài | Arduino Uno, cáp USB, breadboard, dây nối, điện trở | ✅ | Sách dùng breadboard 840 lỗ |
+| 1.1–1.4 | Đèn LED đỏ, vàng, xanh lá (10 đèn đỏ cho đèn chạy đuổi) | ✅ | Đèn chạy đuổi rút còn 4 đèn |
+| 1.5, 2.3, 2.5, 5.1 | Nút bấm | ✅ | Cần 3–4 nút. Sách chỉ dùng 1 nút, cần xác nhận số lượng |
+| 1.6 | Biến trở (núm xoay) 4,7kΩ hoặc 10kΩ | ✅ | |
+| 1.7, 5.3 | Quang trở + điện trở 10kΩ | ✅ | |
+| 1.8, 4.2, 5.2 | 3 đèn LED đỏ, xanh lá, xanh dương | ✅ 🔁 | SIK dùng 1 đèn RGB; bộ của bạn dùng 3 đèn rời (đèn RGB 4 chân là ❓). Khối lệnh `đèn màu (đỏ)` dùng được cho cả hai |
+| 1.9 | Bảng đèn 8×8 | ❓ 🔁 | Sách nối bảng đèn qua IC MAX7219 trên breadboard. Nếu bạn có **module 8×8 có sẵn MAX7219** (5 chân) thì bé dùng dễ hơn nhiều |
+| 2.1–2.5 | Còi piezo | ✅ | Piezo phát được nốt nhạc |
+| 2.4 | Còi piezo + biến trở | ✅ | |
+| 2.6 | Miếng piezo + điện trở 1MΩ | ✅ | Dùng chính miếng piezo làm cảm biến gõ |
+| 3.1 | Servo nhỏ (2 cái) | ✅ | |
+| 3.2, 3.3, 5.3 | Cảm biến khoảng cách **LV-MaxSonar EZ3** | ✅ 🔁 | SIK dùng HC-SR04. MaxSonar cho số đo trực tiếp, dễ nối hơn. Chương trình nạp cho mạch hỗ trợ cả hai loại |
+| 3.4 | Joystick 2 trục (hoặc 2 biến trở) | ❓ | |
+| 4.1, 4.2 | Cảm biến nhiệt độ **DS18B20** | ✅ 🔁 | Thay cho TMP36/DHT11. Không phải chỉnh, đo chính xác. Sách còn có LM335 nhưng phải chỉnh bằng biến trở nên không dùng |
+| 5.4 | Đầu đọc RFID **ID-12** + thẻ 125kHz | ❓ | Đầu đọc ID-12 cần bo ra chân (breakout) |
+
+### Linh kiện trong bộ của bạn nhưng không dùng cho bé 6 tuổi
+
+| Linh kiện | Lý do |
+|---|---|
+| Động cơ DC, transistor TIP120, IC L293D, motor shield, động cơ bước, nguồn ngoài 12V | Cần nguồn điện riêng, dòng điện lớn, dễ nóng; để dành cho bé lớn hơn |
+| Màn hình LCD 16×2, LCD đồ hoạ 128×64, màn hình 7 đoạn | Bé chưa đọc tốt; nối nhiều dây. Thay bằng hình trên màn hình TurboWarp |
+| IC thanh ghi dịch 74HC595 | Mạch phức tạp |
+| Thẻ nhớ SD, đồng hồ DS1307, cảm biến áp suất SCP1000, màn cảm ứng Nintendo DS, Arduino Mega | Khó với bé, hoặc không cần cho các bài này |
+| Ethernet shield | Phần IoT làm qua cáp USB và TurboWarp là đủ cho bé 6 tuổi. Có thể dùng sau cho phần mở rộng "IoT thật" (gửi dữ liệu lên mạng) |
+
+### Chương trình nạp cho mạch (firmware)
+
+Bố mẹ hoặc giáo viên nạp **một lần** bằng Arduino IDE. Chương trình này hiểu tất cả linh kiện trong bảng trên (đèn, nút, biến trở, quang trở, piezo, servo, MaxSonar, DS18B20, bảng đèn MAX7219, joystick, RFID ID-12). Cần cài thêm 2 thư viện miễn phí trong Arduino IDE: **OneWire** và **DallasTemperature** (cho DS18B20).
 
 ## 8. An toàn
 
@@ -233,12 +268,12 @@ Có hai lựa chọn: mua bộ SparkFun Inventor's Kit, hoặc một **bộ Ardu
 1. Extension Arduino, chương trình cho mạch và chế độ mạch ảo.
 2. Bài mẫu 1.2 hoàn chỉnh (bài giảng, bài tập, chấm) để bạn chạy thử.
 3. Các dạng bài tập mới và phần chấm của giáo viên.
-4. Viết đủ 24 bài, dịch dần theo từng chặng để bạn duyệt.
+4. Viết đủ 28 bài, dịch dần theo từng chặng để bạn duyệt.
 
 ## 10. Cần bạn duyệt
 
-1. Danh sách 24 bài (20 bài chính và 4 bài thêm) có ổn không?
+1. Danh sách 28 bài (20 bài chính và 8 bài thêm) có ổn không?
 2. Bài tập trên web: các dạng bài mới (xếp khối, nối hình, tô màu, vẽ, ảnh mạch, ghi âm) và phần chấm thêm cho giáo viên ở mục 5 có cần hết không?
 3. Giọng văn của bài mẫu 1.2 có phù hợp không (cách xưng hô "con", độ dài câu)?
-4. Cảm biến nhiệt độ dùng **TMP36** hay **DHT11**?
+4. Bảng linh kiện ở mục 7: bạn có đủ những linh kiện đánh ❓ không (đèn RGB 4 chân, bảng đèn 8×8 loại có sẵn mạch MAX7219, joystick, đầu đọc RFID)?
 5. Kế hoạch kỹ thuật ở mục 9 (thẻ "Arduino" riêng trên bản đồ học, chế độ mạch ảo, thứ tự làm) có ổn không?
